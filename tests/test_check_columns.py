@@ -7,7 +7,8 @@ def test_check_columns_correct():
     '''
     Tests check_columns correctly checks items summing to 1.0 returns true
     '''
-    raise NotImplementedError("Please implement this test")
+    df = pd.DataFrame([0.1, 0.9])
+    assert check_columns(df) is True
 
 
 def test_check_columns_incorrect():
